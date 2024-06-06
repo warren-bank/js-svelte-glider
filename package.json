@@ -1,6 +1,6 @@
 {
   "name": "@warren-bank/svelte-glider",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Svelte wrapper for Glider.js - A fast, lightweight carousel alternative.",
   "license": "GPL-2.0",
   "author": {
@@ -10,7 +10,8 @@
   },
   "type": "module",
   "files": [
-    "src"
+    "src",
+    "defaults"
   ],
   "exports": {
     ".": {
@@ -19,9 +20,11 @@
       "svelte": "./src/Glider.svelte",
       "types": "./src/Glider.d.ts"
     },
+    "./css": "./defaults/glider.defaults.css",
     "./svelte": "./src/Glider.svelte",
     "./src/Glider.svelte": "./src/Glider.svelte",
-    "./src/Glider.d.ts": "./src/Glider.d.ts"
+    "./src/Glider.d.ts": "./src/Glider.d.ts",
+    "./glider.defaults.css": "./defaults/glider.defaults.css"
   },
   "svelte": "./src/Glider.svelte",
   "types": "./src/Glider.d.ts",

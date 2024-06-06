@@ -67,21 +67,31 @@
     <pre><code>
 &lt;script lang="ts"&gt;
   import Glider from '@warren-bank/svelte-glider'
+
   import 'glider-js/glider.min.css'
+  import '@warren-bank/svelte-glider/glider.defaults.css'
 &lt;/script&gt;
 
 &lt;Glider
+  class="gradient-outline hide-scrollbar"
   draggable
   hasArrows
   hasDots
   slidesToShow=&lbrace;2&rbrace;
   slidesToScroll=&lbrace;1&rbrace;
 &gt;
-  &lt;Pane&gt;1&lt;/Pane&gt;
-  &lt;Pane&gt;2&lt;/Pane&gt;
-  &lt;Pane&gt;3&lt;/Pane&gt;
-  &lt;Pane&gt;4&lt;/Pane&gt;
-  &lt;Pane&gt;5&lt;/Pane&gt;
+  &lt;div class="slide"&gt;&lt;h1&gt;1&lt;/h1&gt;&lt;/div&gt;
+  &lt;div class="slide"&gt;&lt;h1&gt;2&lt;/h1&gt;&lt;/div&gt;
+  &lt;div class="slide"&gt;&lt;h1&gt;3&lt;/h1&gt;&lt;/div&gt;
+  &lt;div class="slide"&gt;&lt;h1&gt;4&lt;/h1&gt;&lt;/div&gt;
+  &lt;div class="slide"&gt;&lt;h1&gt;5&lt;/h1&gt;&lt;/div&gt;
+  &lt;div class="slide"&gt;&lt;h1&gt;6&lt;/h1&gt;&lt;/div&gt;
+  &lt;div class="slide"&gt;&lt;h1&gt;7&lt;/h1&gt;&lt;/div&gt;
+  &lt;div class="slide"&gt;&lt;h1&gt;8&lt;/h1&gt;&lt;/div&gt;
+  &lt;div class="slide"&gt;&lt;h1&gt;9&lt;/h1&gt;&lt;/div&gt;
+  &lt;div class="slide"&gt;&lt;h1&gt;10&lt;/h1&gt;&lt;/div&gt;
+  &lt;div class="slide"&gt;&lt;h1&gt;11&lt;/h1&gt;&lt;/div&gt;
+  &lt;div class="slide"&gt;&lt;h1&gt;12&lt;/h1&gt;&lt;/div&gt;
 &lt;/Glider&gt;
 </code></pre>
   </div>

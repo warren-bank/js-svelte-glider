@@ -17,38 +17,63 @@ npm install "@warren-bank/svelte-glider"
 ```html
 <script lang="ts">
   import Glider from '@warren-bank/svelte-glider'
+
   import 'glider-js/glider.min.css'
+  import '@warren-bank/svelte-glider/glider.defaults.css'
 </script>
 
 <Glider
+  class="gradient-outline hide-scrollbar"
   draggable
   hasArrows
   hasDots
   slidesToShow={2}
   slidesToScroll={1}
 >
-  <Pane>1</Pane>
-  <Pane>2</Pane>
-  <Pane>3</Pane>
-  <Pane>4</Pane>
-  <Pane>5</Pane>
+  <div class="slide"><h1>1</h1></div>
+  <div class="slide"><h1>2</h1></div>
+  <div class="slide"><h1>3</h1></div>
+  <div class="slide"><h1>4</h1></div>
+  <div class="slide"><h1>5</h1></div>
+  <div class="slide"><h1>6</h1></div>
+  <div class="slide"><h1>7</h1></div>
+  <div class="slide"><h1>8</h1></div>
+  <div class="slide"><h1>9</h1></div>
+  <div class="slide"><h1>10</h1></div>
+  <div class="slide"><h1>11</h1></div>
+  <div class="slide"><h1>12</h1></div>
 </Glider>
 ```
 
 ### CSS
 
-To use the CSS for _Glider.js_, you may import it from the `npm` module:
+You may import the _Glider.js_ CSS:
 
 ```js
-import "glider-js/glider.min.css";
+import 'glider-js/glider.min.css'
 ```
 
-or reference the CSS file in your `<head>` (not recommended):
+_Note that the `glider-js` module is a dependency of _this_ package. As such, your project can import its CSS file without needing to add `glider-js` as an explicit dependency._
+
+_Note that this CSS only includes the minimal set of rules required for basic functionality. You will want to include additional style for proper appearance._
+
+Additionally, _this_ package exposes a CSS file containing minimal appearance styling intended to provide sane defaults. The above [usage example](#usage) is styled by this CSS file:
+
+```js
+import '@warren-bank/svelte-glider/glider.defaults.css'
+```
+
+Though CSS bundling is recommended, if necessary, both of these CSS files could be included into an HTML document by external links:
 
 ```html
 <link
   rel="stylesheet"
-  href="https://unpkg.com/glider-js@1.7.7/glider.min.css"
+  href="https://unpkg.com/glider-js@1.7.9/glider.min.css"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@warren-bank/svelte-glider@1.1.0/defaults/glider.defaults.css"
 />
 ```
 
@@ -167,11 +192,11 @@ _Note that Glider.js is designed to be mobile-first, so the order of your breakp
 
 ```html
 <script lang="ts">
-  import {P} from 'flowbite-svelte'
+  import {Blockquote} from 'flowbite-svelte'
 </script>
 
 <Glider
-  containerComponent={P}
+  containerComponent={Blockquote}
 >
   <!-- ... -->
 </Glider>
