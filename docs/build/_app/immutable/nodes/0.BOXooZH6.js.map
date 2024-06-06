@@ -1,0 +1,1 @@
+{"version":3,"file":"0.BOXooZH6.js","sources":["../../../../../../src/routes/+layout.js"],"sourcesContent":["export const prerender = true\nexport const trailingSlash = 'never'\n"],"names":["prerender","trailingSlash"],"mappings":"qJAAO,MAAMA,EAAY,GACZC,EAAgB"}
